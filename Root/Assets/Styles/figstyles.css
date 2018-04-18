@@ -1,0 +1,26 @@
+/*
+	Desert Dwellers figure style sheet
+	Author:	Lauren Wiebenga
+	Date:	11/27/17
+	File:	figstyles.css
+	Supporting files-
+		none
+*/
+
+figure {
+	position: relative;
+}
+figure img {
+	box-shadow: 2px 1px 3px #31432B;
+}
+figcaption {
+	margin: 0 auto;
+	padding: 0.4em 0 0.4em 0.4em;
+	width: 49%;
+	position: relative;
+	top: -53px;
+	left: 0;
+	background: white;
+	background: rgba(255,255,255,0.7);
+	font-style: italic;
+}

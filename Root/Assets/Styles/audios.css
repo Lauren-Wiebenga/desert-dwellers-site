@@ -1,0 +1,15 @@
+/*
+	Desert Dwellers audios style sheet
+	Author:	Lauren Wiebenga
+	Date:	12/3/17
+	File:	audios.css
+	Supporting files-
+		none
+*/
+
+.audio-container {
+	text-align: center;
+}
+#title {
+	font-style: italic;
+}

@@ -1,0 +1,109 @@
+/*
+	Desert Dwellers form style sheet
+	Author:	Lauren Wiebenga
+	Date:	11/27/17
+	File:	forms.css
+	Supporting files-
+		none
+*/
+
+
+.contact {
+	float: left;
+	background: white;
+}
+.address p {
+	text-indent: 0;
+	text-align: center;
+}
+
+/* form styles */
+form {
+	padding: 1.5em 2em 2em;
+	background: white;
+}
+span {
+	color: red;
+}
+
+/* fieldset styles */
+fieldset {
+	border: 2px solid #F8B073;
+	padding: 1em;
+}
+fieldset:first-of-type {
+	margin-bottom: 1em;
+}
+
+/* label styles */
+form p:first-of-type {
+	position: relative;
+	top: -0.8em;
+	font-style: italic;
+	font-size: 0.8em;
+}
+form p:last-of-type {
+	margin-top: 3em;
+}
+legend {
+	padding: 0.3em;
+	background: #F8B073;
+}
+.contact-info label {
+	display: block;
+	position: relative;
+	margin: 1em 0 1em 2em;
+}
+.user-input {
+	text-align: right;
+}
+label[for="newsletter"] {
+	margin: 1em auto;
+	display: block;
+	text-align: center;
+}
+
+/* field styles */
+input, textarea {
+	border: 1px solid #ADE7DB;
+	padding: 0.2em;
+	font-size: 0.8em;
+}
+textarea {
+	margin: 1em auto;
+	display: block;
+	width: 90%;
+	font-size: 0.8em;
+}
+#fname, #lname, #emailinput, #phoneinput {
+	margin: 0 30% 0 2%;
+	width: 40%;
+}
+input[type="radio"], input[type="checkbox"] {
+	margin-right: 0.5em;
+}
+
+/* button styles */
+input[type="submit"], input[type="reset"] {
+	padding: 0.5em;
+	width: 15%;
+	font-size: 1em;
+	background: #ADE7DB;
+}
+input[type="submit"] {
+	margin-left: 30%;
+	float: left;
+}
+input[type="reset"] {
+	margin-right: 30%;
+	float: right;
+}
+
+
+/* input validation styles */
+input:focus:invalid {
+	background: #F8DCC3;
+}
+input:focus:valid {
+	background: #D7F8C9;
+}

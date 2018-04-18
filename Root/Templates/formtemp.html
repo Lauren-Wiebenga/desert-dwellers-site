@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 
+			Desert Dwellers form template page
+			Author:	Lauren Wiebenga
+			Date:	11/27/17
+			File:	formtemp.html
+			Supporting files-
+				../Assets/Styles/main.css 
+				../Assets/Styles/forms.css
+
+				../Assets/Images/Icons/favicon-32x32.ico
+				../Assets/Images/Icons/apple-icon-120x120.png
+				../Assets/Images/Icons/android-icon-192x192.png
+
+				../Assets/Images/logo.png
+
+				../Assets/JavaScripts/formscript.js
+		 -->
+		<title>Desert Dwellers | Form Template</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="../Assets/Styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../Assets/Styles/forms.css">
+
+		<link rel="shortcut icon" href="../Assets/Images/Icons/favicon-32x32.png">
+		<link rel="apple-touch-icon" href="../Assets/Images/Icons/apple-icon-120x120.png">
+		<link rel="icon" sizes="192x192" href="../Assets/Images/Icons/android-icon-192x192.png">
+	</head>
+	<body>
+		<p class="skip-nav"><a href="#content-start">Skip navigation</a></p>
+		<header>
+			<div class="header-img"></div>
+			<a href="index.html"><img src="../Assets/Images/logo.png" alt="Desert Dwellers"></a>
+		</header>
+
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about us</a></li>
+				<li><a href="learn.html">basic info</a></li>
+				<li><a href="specialty.html">our specialty</a></li>
+				<li><a href="contact.html">contact us</a></li>
+			</ul>
+		</nav>
+
+		<div class="main-container">
+		<main>
+			<form id="contact-form" action="results.html">
+				<fieldset class="contact-info">
+					<legend>Contact Information</legend>
+					<p><span>*</span> marks required fields</p>
+					<label for="fname" class="user-input">
+						<span>*</span> First Name:
+						<input type="text" name="first-name" id="fname" required="required" pattern="([A-Za-z -])+">
+					</label>
+					<label for="lname" class="user-input">
+						<span>*</span>Last Name:
+						<input type="text" name="last-name" id="lname" required="required" pattern="([A-Za-z -])+">
+					</label>
+					<label for="emailinput" class="user-input">
+						<span>*</span> Email Address:
+						<input type="email" name="email-address" id="emailinput" placeholder="address@place.com" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+					</label>
+					<label for="phoneinput" class="user-input">
+						<span>*</span>Phone Number:
+						<input type="tel" name="phone-number" id="phoneinput" placeholder="(111) 222-3456" required="required" pattern="([0-9 \(\)-]){8,14}">
+					</label>
+					<p>Preferred method of contact:</p>
+					<label for="optphone">
+						<input type="radio" name="preference" id="optphone" value="phone">
+						Phone
+					</label>
+					<label for="optemail">
+						<input type="radio" name="preference" id="optemail" value="email" checked="checked">
+						Email
+					</label>
+				</fieldset>
+				<fieldset class="message-info">
+					<legend>Message</legend>
+					<label for="messageinput"><span>*</span> Comments, Questions, and/or Requests:</label>
+					<textarea id="messageinput" rows="15" required="required"></textarea>
+
+					<label for="newsletter">
+					<input type="checkbox" name="newsletter" id="newsletter">
+						send me the monthly newsletter
+					</label>
+					<input type="submit" name="submit-button" id="submit">
+					<input type="reset" name="reset-button" id="reset">
+				</fieldset>
+			</form>
+		</main>
+
+		<aside>
+			<h2>Dates of Interest</h2>
+			<div class="event-item">
+				<h3>January 1</h3>
+				<h4>Event Title</h4>
+				<p>event description</p>
+			</div>
+			<div class="event-item">
+				<h3>January 1</h3>
+				<h4>Event Title</h4>
+				<p>event description</p>
+			</div>
+		</aside>
+		</div>
+
+		<footer>
+			<p>Lauren Wiebenga &copy; 2017</p>
+		</footer>
+		<!-- scripts -->
+		<script src="../Assets/JavaScripts/formscript.js"></script>
+	</body>
+</html>
